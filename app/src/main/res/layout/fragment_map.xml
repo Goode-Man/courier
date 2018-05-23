@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_map_fragment"
+    style="@style/layout_full"
+    android:orientation="vertical"
+    tools:context="com.example.machenike.courier.MapFragment">
+
+    <com.baidu.mapapi.map.MapView
+        style="@style/layout_full"
+        android:id="@+id/mMapView"/>
+
+    <Button
+        style="@style/layout_wrap"
+        android:id="@+id/location_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="定位"/>
+
+</RelativeLayout>

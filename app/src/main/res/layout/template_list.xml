@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_full"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/template_list_text"
+        android:text="123456789123456123456789012345678901234567890"
+        android:textSize="16dp"/>
+</LinearLayout>
+

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_message"
+    style="@style/layout_full"
+    android:orientation="vertical"
+    android:background="#dfdfdf"
+    tools:context="com.example.machenike.courier.MessageActivity">
+
+    <RelativeLayout
+        style="@style/layout_full"
+        android:background="#32d4a3"
+        android:layout_weight="7">
+        <TextView
+            style="@style/layout_wrap"
+            android:text="《"
+            android:id="@+id/message_back"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"/>
+
+        <Button
+            style="@style/layout_wrap"
+            android:layout_centerVertical="true"
+            android:background="@drawable/textview_style"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/message_send"
+            android:text="发送"/>
+
+        <TextView
+            style="@style/layout_wrap"
+            android:text="群发短信"
+            android:textSize="20dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/layout_full"
+        android:background="@drawable/input_style"
+        android:layout_weight="5"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <EditText
+            style="@style/layout_full"
+            android:enabled="true"
+            android:gravity="top"
+            android:id="@+id/message_edit"
+            android:background="@drawable/line_et_bg"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:layout_weight="1"/>
+        <TextView
+            style="@style/layout_full"
+            android:layout_weight="5"
+            android:id="@+id/message_update"
+            android:background="@drawable/inputs_style"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="更换短信模版"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_full"
+        android:layout_weight="3"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/layout_wrap"
+                android:text="全选"
+                android:textColor="#fa644d"
+                android:layout_width="62dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/message_checkall"
+                android:paddingTop="5dp"/>
+            <Button
+                style="@style/layout_wrap"
+                android:background="@drawable/input_style"
+                android:text="电话"
+                android:id="@+id/message_bt2"
+                android:layout_width="62dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="135dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                style="@style/layout_wrap"
+                android:background="@drawable/input_style"
+                android:text="姓名"
+                android:layout_width="62dp"
+                android:layout_height="25dp"
+                android:id="@+id/message_bt1"
+                android:layout_marginStart="55dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                style="@style/layout_wrap"
+                android:background="@drawable/input_style"
+                android:text="快递单号"
+                android:id="@+id/message_bt3"
+                android:layout_width="62dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/layout_full"
+            android:orientation="vertical">
+
+            <ListView
+                style="@style/layout_full"
+                android:id="@+id/message_list"
+                android:choiceMode="multipleChoice"  >
+
+            </ListView>
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>

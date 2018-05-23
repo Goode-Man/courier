@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@style/layout_full"
+    android:orientation="vertical"
+    tools:context="com.example.machenike.courier.MainActivity">
+
+    <FrameLayout
+        style="@style/layout_full"
+        android:layout_weight="1"
+        android:id="@+id/frame"/>
+
+    <GridView
+        style="@style/layout_full"
+        android:stretchMode="columnWidth"
+        android:numColumns="3"
+        android:layout_weight="8"
+        android:id="@+id/gridView"
+        android:verticalSpacing="0dp"/>
+
+</LinearLayout>
